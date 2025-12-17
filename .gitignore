@@ -1,13 +1,27 @@
+# --------------------
 # Python
+# --------------------
 __pycache__/
 *.py[cod]
+*.pyo
 *$py.class
 *.so
 .Python
+
+# --------------------
+# Virtual Environments
+# --------------------
+venv/
 env/
+ENV/
+.venv/
+
+# --------------------
+# Build / Dist
+# --------------------
 build/
-develop-eggs/
 dist/
+develop-eggs/
 downloads/
 eggs/
 .eggs/
@@ -20,22 +34,37 @@ var/
 .installed.cfg
 *.egg
 
-# Virtual Environment
-venv/
-env/
-ENV/
-
-# IDE
+# --------------------
+# IDE / OS
+# --------------------
 .idea/
 .vscode/
 *.swp
 *.swo
 .DS_Store
 
-# Logs
+# --------------------
+# Logs / Runtime files
+# --------------------
 *.log
+*.pid
 
-# Misc
+# --------------------
+# Test / Coverage
+# --------------------
 .coverage
 .tox/
 .pytest_cache/
+
+# --------------------
+# Environment / Secrets
+# --------------------
+.env
+.env.*
+
+# --------------------
+# Archives
+# --------------------
+*.zip
+*.tar
+*.tar.gz
