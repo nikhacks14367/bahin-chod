@@ -20,7 +20,7 @@ import os
 load_dotenv()
 
 
-from gateways import register_gateways
+from gateway.autoShopify import register_gateways
 from utils import Utils
 from utils_fo.logger import Logger
 BotCache = {}
@@ -72,4 +72,5 @@ async def main():
 
 if __name__ == '__main__':
     asyncio.run(main())
+
 
